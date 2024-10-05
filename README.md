@@ -1,2 +1,3 @@
 # rita
-Potential replacement for litaio/lita
+
+Potential replacement for [litaio/lita](https://github.com/litaio/lita).
