@@ -7,8 +7,8 @@ require "lita/version"
 Gem::Specification.new do |spec|
   spec.name          = "rita"
   spec.version       = Lita::VERSION
-  spec.authors       = ["Jimmy Cuadra"]
-  spec.email         = ["jimmy@jimmycuadra.com"]
+  spec.authors       = ["Benjamin Oakes"]
+  spec.email         = ["hello@benjaminoakes.com"]
   spec.description   = "ChatOps for Ruby."
   spec.summary       = "ChatOps framework for Ruby. Rita is a robot companion for your chat room."
   spec.homepage      = "https://github.com/ritaio/rita"
