@@ -30,7 +30,7 @@ Gem::Specification.new do |spec|
     "source_code_uri"   => "https://github.com/ritaio/rita",
   }
 
-  spec.add_runtime_dependency "bundler", "~> 2.2.3"
+  spec.add_runtime_dependency "bundler"
   spec.add_runtime_dependency "faraday", "~> 1.6.0"
   spec.add_runtime_dependency "http_router", "~> 0.11.2"
   spec.add_runtime_dependency "i18n", "~> 1.8.10"
