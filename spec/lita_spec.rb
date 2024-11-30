@@ -183,13 +183,13 @@ describe Lita do
 
     it "calls before_run hooks" do
       described_class.register_hook(:before_run, hook)
-      expect(hook).to receive(:call).with(config_path: "path/to/config")
+      expect(hook).to receive(:call).with({ config_path: "path/to/config" })
       described_class.load_config("path/to/config")
     end
 
     it "calls config_finalized hooks" do
       described_class.register_hook(:config_finalized, hook)
-      expect(hook).to receive(:call).with(config_path: "path/to/config")
+      expect(hook).to receive(:call).with({ config_path: "path/to/config" })
       described_class.load_config("path/to/config")
     end
 

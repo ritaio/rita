@@ -13,7 +13,7 @@ describe Lita::Robot, lita: true do
   end
 
   context "when there are previously persisted rooms" do
-    before { %w[#foo #bar].each { |id| Lita.redis.sadd("persisted_rooms", id) } }
+    before { %w[#foo #bar].each { |id| Lita.redis.sadd?("persisted_rooms", id) } }
 
     it "receives the room_ids in the payload" do
       expect_any_instance_of(described_class).to receive(:trigger).with(
