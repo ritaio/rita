@@ -17,4 +17,3 @@ test/version_tmp
 tmp
 .idea
 lita_config.rb
-!test-project/lita_config.rb
