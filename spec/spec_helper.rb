@@ -9,13 +9,15 @@ end
 require "pry"
 require "lita/rspec"
 
+# Disable deprecation warnings for Redis.
+# Uncomment and address each warning before using v5+ of the redis gem as a dependency.
+Redis.silence_deprecations = true
+
 RSpec.configure do |config|
   unless ENV.key?("CI")
     config.filter_run focus: true
     config.run_all_when_everything_filtered = true
-    config.example_status_persistence_file_path = "tmp/rspec_status"
   end
-  config.silence_filter_announcements = true
 
   config.mock_with :rspec do |mocks_config|
     mocks_config.verify_doubled_constant_names = true
