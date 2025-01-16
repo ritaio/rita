@@ -50,7 +50,7 @@ module Lita
       remove_user_from_group!(user, group)
     end
 
-    # Removes a user from an authorization group without validating the
+    # Removes a suer from an authorization group without validating the
     # permissions of the requesting user.
     # @param user [User] The user to remove from the group.
     # @param group [Symbol, String] The name of the group.
