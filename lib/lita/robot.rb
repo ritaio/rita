@@ -122,7 +122,7 @@ module Lita
       room_object = find_room(room)
 
       if room_object
-        redis.sadd?("persisted_rooms", room_object.id)
+        redis.sadd("persisted_rooms", room_object.id)
         adapter.join(room_object.id)
       else
         adapter.join(room)
@@ -137,7 +137,7 @@ module Lita
       room_object = find_room(room)
 
       if room_object
-        redis.srem?("persisted_rooms", room_object.id)
+        redis.srem("persisted_rooms", room_object.id)
         adapter.part(room_object.id)
       else
         adapter.part(room)
