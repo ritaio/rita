@@ -10,6 +10,13 @@ require "pry"
 require "lita/rspec"
 
 RSpec.configure do |config|
+  unless ENV.key?("CI")
+    config.filter_run focus: true
+    config.run_all_when_everything_filtered = true
+    config.example_status_persistence_file_path = "tmp/rspec_status"
+  end
+  config.silence_filter_announcements = true
+
   config.mock_with :rspec do |mocks_config|
     mocks_config.verify_doubled_constant_names = true
     mocks_config.verify_partial_doubles = true

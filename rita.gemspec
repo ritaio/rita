@@ -38,7 +38,7 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "puma", "~> 5.4.0"
   spec.add_runtime_dependency "rack", "~> 2.2.3"
   spec.add_runtime_dependency "rb-readline", "~> 0.5.5"
-  spec.add_runtime_dependency "redis-namespace", "~> 1.8.1"
+  spec.add_runtime_dependency "redis-namespace", "~> 1.11.0"
   spec.add_runtime_dependency "thor", "~> 1.1.0"
 
   spec.add_development_dependency "pry", "~> 0.14.2"
