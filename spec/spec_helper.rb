@@ -10,7 +10,7 @@ require "pry"
 require "lita/rspec"
 
 # Disable deprecation warnings for Redis.
-# Uncomment and address each warning before using v5+ of the redis gem as a dependency.
+# Remove this line and address each warning before using v5+ of the redis gem as a dependency.
 Redis.silence_deprecations = true
 
 RSpec.configure do |config|
