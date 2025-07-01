@@ -57,7 +57,7 @@ describe Lita::Handlers::Authorization, lita_handler: true do
       expect(replies.last).to eq("#{target_user.name} was removed from bar.")
     end
 
-    it "replies with a warning if the user was already in the group" do
+    it "replies with a warning if the user was not in the group" do
       send_command("auth remove foo bar")
       send_command("auth remove foo bar")
       expect(replies.last).to eq("#{target_user.name} was not in bar.")

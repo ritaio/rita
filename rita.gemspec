@@ -38,13 +38,15 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "puma", "~> 5.4.0"
   spec.add_runtime_dependency "rack", "~> 2.2.3"
   spec.add_runtime_dependency "rb-readline", "~> 0.5.5"
+  spec.add_runtime_dependency "redis", "< 5"
   spec.add_runtime_dependency "redis-namespace", "~> 1.8.1"
   spec.add_runtime_dependency "thor", "~> 1.1.0"
 
-  spec.add_development_dependency "pry-byebug", "~> 3.9.0"
+  spec.add_development_dependency "pry", "~> 0.14.2"
+  spec.add_development_dependency "pry-byebug", "~> 3.10.1"
   spec.add_development_dependency "rack-test", "~> 1.1.0"
   spec.add_development_dependency "rake", "~> 13.0.3"
   spec.add_development_dependency "rspec", "~> 3.10.0"
-  spec.add_development_dependency "rubocop", "~> 1.17.0"
+  spec.add_development_dependency "rubocop", "~> 1.70.0"
   spec.add_development_dependency "simplecov", "~> 0.21.2"
 end
